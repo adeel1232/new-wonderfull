@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import TopBanner from '../Components/TopBanner'
 import Bali from '../assets/Bali.jpg'
-import Paris from '../assets/Paris.jpg'
+import Paris from '../assets/paris.jpg'
 import Tokyo from '../assets/Tokyo.jpg'
 import India from '../assets/India.jpg'
 import Venice from '../assets/Venice.jpg'
