@@ -1,0 +1,42 @@
+.slider-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.slick-slide {
+  padding: 10px;
+}
+
+.slick-dots li button:before {
+  color: #ef4444;
+  font-size: 12px;
+}
+
+.slick-prev,
+.slick-next {
+  width: 35px;
+  height: 35px;
+  z-index: 10;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s;
+}
+
+/* Modal Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.4s ease-in-out;
+}

@@ -1,0 +1,114 @@
+/* Navbar Container */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  width: 100%;
+  backdrop-filter: blur(15px);
+  background: linear-gradient(135deg, rgba(255,95,109,0.85), rgba(255,195,113,0.85));
+  transition: all 0.3s ease-in-out;
+}
+
+/* Inner Navbar */
+.navbar-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo Styling */
+.company-logo {
+  font-family: 'Georgia', serif;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+  position: relative;
+  line-height: 1.2;
+}
+
+.company-logo .sub-logo {
+  display: block;
+  font-size: 1rem;
+  color: #ffeb3b; /* bright yellow accent */
+  font-weight: 600;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+  margin-top: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect for logo */
+.company-logo:hover .sub-logo {
+  color: #ffffff;
+  text-shadow: 0 0 10px #ffeb3b, 0 0 20px #ff5722;
+}
+
+/* Nav menu */
+.nav-menu ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.nav-menu ul li {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nav-menu ul li::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #ffeb3b;
+  transition: 0.3s;
+}
+
+.nav-menu ul li:hover::after {
+  width: 100%;
+}
+
+.nav-menu ul li:hover {
+  color: #ffeb3b;
+}
+
+/* Book Now button */
+.book-btn {
+  margin-left: 2rem;
+  background: #ff5722;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.book-btn:hover {
+  background: #ff9100;
+  box-shadow: 0 4px 15px rgba(255,145,0,0.6);
+}
+
+/* Mobile menu icon */
+.menu-icon {
+  cursor: pointer;
+  display: block;
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .menu-icon {
+    display: none;
+  }
+  .nav-menu {
+    display: flex;
+    align-items: center;
+  }
+}

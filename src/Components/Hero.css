@@ -1,0 +1,35 @@
+/* Custom dots */
+.custom-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.5);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.slick-dots li.slick-active div {
+  background: #ffeb3b; /* active dot color */
+  transform: scale(1.2);
+}
+
+/* Hero underline */
+.underline-logo {
+  display: block;
+  font-size: 1.5rem;
+  margin-top: 5px;
+  color: #ffeb3b; 
+  font-weight: 600;
+  position: relative;
+}
+
+.underline-logo::after {
+  content: "";
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, #ff5f6d, #ffc371);
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  border-radius: 2px;
+}
