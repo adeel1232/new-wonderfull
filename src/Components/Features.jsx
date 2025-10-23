@@ -39,10 +39,11 @@ const Features = () => {
       <div className='max-w-7xl mx-auto px-4 md:px-6'>
         <div className='text-center mb-12'>
             <h2 className='text-3xl font-bold tracking-tighter sm:text-5xl'>
-               Welcome to Desire Vacations
+               Welcome to WONDERFUL
+HoliDays&Events
             </h2>
             <p className='mt-4 text-muted-foreground md:text-xl'><h2><b>Crafting Dreams, Creating Memories</b></h2>
-Though a young company we are manage by veterans of the tourism industry and handled by a young crew Realizing that specialization is of essence in this competitive era, our main focus and founding theme has been the same. Headed by Salman Khalid Butt, who has hands on experience of more than 22 years, our company combines the strength of “Known Names” with optimistic youth for better results and quality of service</p>
+Though a young company we are manage by veterans of the tourism industry and handled by a young crew Realizing that specialization is of essence in this competitive era, our main focus and founding theme has been the same. Headed by Salman Khalid Butt, who has hands on experience of more than 25 years, our company combines the strength of “Known Names” with optimistic youth for better results and quality of service</p>
         </div>
         <div className='grid gap-8 sm:grid-cols-2 lg:grid-cols-3'>
             {features.map((feature, index)=> (

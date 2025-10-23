@@ -6,10 +6,10 @@ import { Clock, Star, X } from "lucide-react";
 import "../Components/Css/reactSlick.css";
 
 import Bali from "../assets/Bali.jpg";
-import Paris from "../assets/paris.jpg";
-import Tokyo from "../assets/tokyo.jpg";
+import Paris from "../assets/Paris.jpg";
+import Tokyo from "../assets/Tokyo.jpg";
 import India from "../assets/India.jpg";
-import Venice from "../assets/venice.jpg";
+import Venice from "../assets/Venice.jpg";
 import next from "../assets/next.png";
 import back from "../assets/back.png";
 

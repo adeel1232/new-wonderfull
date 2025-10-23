@@ -19,9 +19,9 @@ const images = [
     { src: '/Hero3.jpg', alt: 'Hero3' },
     { src: '/Hero4.jpg', alt: 'Hero4' },
     { src: '/Bali.jpg', alt: 'Bali' },
-    { src: '/venice.jpg', alt: 'Venice' },
-    { src: '/paris.jpg', alt: 'Paris' },
-    { src: '/tokyo.jpg', alt: 'Tokyo' },
+    { src: '/Venice.jpg', alt: 'Venice' },
+    { src: '/Paris.jpg', alt: 'Paris' },
+    { src: '/Tokyo.jpg', alt: 'Tokyo' },
 ];
 
 const GalleryComp = () => {
