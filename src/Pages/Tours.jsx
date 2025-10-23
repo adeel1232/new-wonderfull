@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 import TopBanner from '../Components/TopBanner'
 import Bali from '../assets/Bali.jpg'
-import Paris from '../assets/Paris.jpg'
-import Tokyo from '../assets/Tokyo.jpg'
+import paris from '../assets/paris.jpg'
+import tokyo from '../assets/tokyo.jpg'
 import India from '../assets/India.jpg'
-import Venice from '../assets/Venice.jpg'
+import venice from '../assets/venice.jpg'
 import { Clock, Star, X } from 'lucide-react'
 
 const Tours = () => {
@@ -12,10 +12,10 @@ const Tours = () => {
 
   const destinationJson = [
     { name: 'Bali', img: Bali, star: '3 (12 reviews)', description: "Wonderful Holidays & Events offers an unforgettable trip to Bali. Explore beautiful beaches, culture, and local cuisine." },
-    { name: 'Venice', img: Venice, star: '3 (12 reviews)',description: "Experience Venice with Wonderful Holidays & Events. Enjoy canals, gondolas, and exquisite Italian culture." },
-    { name: 'Tokyo', img: Tokyo, star: '3 (12 reviews)', description: "Discover Tokyo with Wonderful Holidays & Events. Blend of tradition, modernity, and vibrant city life." },
+    { name: 'venice', img: venice, star: '3 (12 reviews)',description: "Experience venice with Wonderful Holidays & Events. Enjoy canals, gondolas, and exquisite Italian culture." },
+    { name: 'tokyo', img: tokyo, star: '3 (12 reviews)', description: "Discover tokyo with Wonderful Holidays & Events. Blend of tradition, modernity, and vibrant city life." },
     { name: 'India', img: India, star: '3 (12 reviews)', description: "Explore the diverse culture and heritage of India with Wonderful Holidays & Events." },
-    { name: 'Paris', img: Paris, star: '3 (12 reviews)',  description: "Romantic Paris tours by Wonderful Holidays & Events, visiting Eiffel Tower, museums, and cafes." },
+    { name: 'paris', img: paris, star: '3 (12 reviews)',  description: "Romantic paris tours by Wonderful Holidays & Events, visiting Eiffel Tower, museums, and cafes." },
   ]
 
   return (

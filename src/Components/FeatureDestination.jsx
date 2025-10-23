@@ -6,10 +6,10 @@ import { Clock, Star, X } from "lucide-react";
 import "../Components/Css/reactSlick.css";
 
 import Bali from "../assets/Bali.jpg";
-import Paris from "../assets/Paris.jpg";
-import Tokyo from "../assets/Tokyo.jpg";
+import paris from "../assets/paris.jpg";
+import tokyo from "../assets/tokyo.jpg";
 import India from "../assets/India.jpg";
-import Venice from "../assets/Venice.jpg";
+import venice from "../assets/venice.jpg";
 import next from "../assets/next.png";
 import back from "../assets/back.png";
 
@@ -41,10 +41,10 @@ const FeatureDestination = () => {
   };
 
   const destinations = [
-    { name: "Saudi Arabia", img: Venice, },
+    { name: "Saudi Arabia", img: venice, },
     { name: "Malaysia", img: Bali,},
-    { name: "Singapore", img: Tokyo,  },
-    { name: "Turkey", img: Paris, },
+    { name: "Singapore", img: tokyo,  },
+    { name: "Turkey", img: paris, },
     { name: "Thailand", img: India,  },
   ];
 
