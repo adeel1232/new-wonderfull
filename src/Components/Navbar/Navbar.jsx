@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { HiMenuAlt1 } from "react-icons/hi";
 import ResponsiveMenu from './ResponsiveMenu';
 import '../Navbar/Nacbar.css';
-
+import logo from '../Navbar/abcd.jpg' 
 const Navbar = () => {
     const [showMenu, setShowMenu] = useState(false)
     const toggleMenu = () => setShowMenu(!showMenu)
@@ -11,12 +11,17 @@ const Navbar = () => {
     return (
         <header className='navbar'>
             <div className='navbar-inner'>
-                <Link to='/' className='logo-link'>
-                    <h1 className="company-logo">
-                        WonderFull
-                        <span className="sub-logo">HoliDays&Events</span>
-                    </h1>
-                </Link>
+             <Link 
+  to='/' 
+  className='logo-link flex items-center p-2 rounded-md transition-all duration-300 hover:bg-white hover:scale-110'
+>
+  <img 
+    src={logo} 
+    alt="Logo" 
+    className='w-28 h-auto object-contain transition-transform duration-300'
+  />
+</Link>
+
 
                 <div className='nav-right'>
                     <nav className='nav-menu'>
@@ -27,7 +32,19 @@ const Navbar = () => {
                             <Link to='/gallery'><li>Gallery</li></Link>
                             <Link to='/contact'><li>Contact</li></Link>
                         </ul>
-                        <button className='book-btn'>Book Now</button>
+                   <button
+  onClick={() =>
+    window.open(
+      'https://wa.me/923004421603?text=Hello%20I%20want%20to%20book%20a%20tour',
+      '_blank'
+    )
+  }
+  className='bg-yellow-400 px-4 py-2 text-sm rounded-md text-black font-semibold hover:bg-black hover:text-yellow-400 transition-all duration-300 shadow-md shadow-yellow-400/30'
+>
+  Book Now
+</button>
+
+
                     </nav>
 
                     <HiMenuAlt1 

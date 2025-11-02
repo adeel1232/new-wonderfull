@@ -12,7 +12,7 @@ const Hero = () => {
     dots: true,
     infinite: true,
     autoplay: true,
-    autoplaySpeed: 3000, // 3 seconds
+    autoplaySpeed: 3000,
     speed: 800,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -20,7 +20,9 @@ const Hero = () => {
     arrows: false,
     appendDots: dots => (
       <div style={{ bottom: '20px' }}>
-        <ul style={{ margin: '0px', display: 'flex', justifyContent: 'center', gap: '10px' }}> {dots} </ul>
+        <ul style={{ margin: '0px', display: 'flex', justifyContent: 'center', gap: '10px' }}>
+          {dots}
+        </ul>
       </div>
     ),
     customPaging: i => (
@@ -41,18 +43,18 @@ const Hero = () => {
                 backgroundPosition: "center",
               }}
             >
-              <div className="absolute inset-0 bg-black opacity-60"></div>
+              {/* Dark overlay for contrast */}
+              <div className="absolute inset-0 bg-black opacity-70"></div>
+
               <div className="relative max-w-7xl mx-auto h-full flex justify-center items-center">
                 <div className="text-center px-5 md:px-0">
-                  <h1 className="text-white font-bold text-4xl lg:text-6xl hero-title">
-                    WONDERFULL
-                    <span className="underline-logo">HoliDays&Events</span>
-                  </h1>
+                 
                   <p className="text-white lg:text-lg lg:w-[700px] mt-4 mx-auto">
                     Explore breathtaking destinations, create unforgettable
                     memories, and embark on the journey of a lifetime.
                   </p>
-                  <button className="bg-red-500 px-6 py-3 text-white rounded-md font-semibold mt-6 hover:bg-black transition-all shadow-lg shadow-red-500/50">
+
+                  <button className="bg-yellow-400 px-6 py-3 text-black rounded-md font-semibold mt-6 hover:bg-black hover:text-yellow-400 transition-all shadow-lg shadow-yellow-500/50">
                     Start Exploring
                   </button>
                 </div>

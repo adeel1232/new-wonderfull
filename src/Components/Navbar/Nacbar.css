@@ -5,7 +5,7 @@
   z-index: 50;
   width: 100%;
   backdrop-filter: blur(15px);
-  background: linear-gradient(135deg, rgba(255,95,109,0.85), rgba(255,195,113,0.85));
+  background: linear-gradient(135deg, rgba(229, 227, 227, 0.85), rgba(32, 29, 27, 0.85));
   transition: all 0.3s ease-in-out;
 }
 
@@ -42,7 +42,7 @@
 /* Hover effect for logo */
 .company-logo:hover .sub-logo {
   color: #ffffff;
-  text-shadow: 0 0 10px #ffeb3b, 0 0 20px #ff5722;
+  text-shadow: 0 0 10px #ffeb3b, 0 0 20px #211d1b;
 }
 
 /* Nav menu */
@@ -81,15 +81,15 @@
 }
 
 /* Book Now button */
-.book-btn {
+/* .book-btn {
   margin-left: 2rem;
-  background: #ff5722;
+  background: #ffeb3b;
   color: white;
   padding: 8px 16px;
   border-radius: 6px;
   font-weight: 600;
   transition: all 0.3s ease;
-}
+} */
 
 .book-btn:hover {
   background: #ff9100;

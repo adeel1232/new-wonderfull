@@ -7,22 +7,33 @@
   padding: 10px;
 }
 
+/* Dots */
 .slick-dots li button:before {
-  color: #ef4444;
+  color: #ffeb3b; /* yellow */
   font-size: 12px;
 }
 
+.slick-dots li.slick-active button:before {
+  color: #000000; /* black for active dot */
+}
+
+/* Arrows */
 .slick-prev,
 .slick-next {
   width: 35px;
   height: 35px;
   z-index: 10;
+  background-color: #000000; /* black background */
+  border-radius: 50%;
+  color: #ffffff; /* white arrow icon */
 }
 
 .slick-prev:hover,
 .slick-next:hover {
+  background-color: #ffeb3b; /* yellow hover */
+  color: #000000; /* black arrow on hover */
   transform: scale(1.1);
-  transition: transform 0.2s;
+  transition: transform 0.2s, background-color 0.2s, color 0.2s;
 }
 
 /* Modal Animation */
@@ -39,4 +50,6 @@
 
 .animate-fadeIn {
   animation: fadeIn 0.4s ease-in-out;
+  background-color: #ffffff; /* white modal background */
+  color: #000000; /* black text */
 }
