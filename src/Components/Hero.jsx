@@ -54,9 +54,13 @@ const Hero = () => {
                     memories, and embark on the journey of a lifetime.
                   </p>
 
-                  <button className="bg-yellow-400 px-6 py-3 text-black rounded-md font-semibold mt-6 hover:bg-black hover:text-yellow-400 transition-all shadow-lg shadow-yellow-500/50">
-                    Start Exploring
-                  </button>
+                  <button
+  onClick={() => window.location.href = '/tours'}
+  className="bg-yellow-400 px-6 py-3 text-black rounded-md font-semibold mt-6 hover:bg-black hover:text-yellow-400 transition-all shadow-lg shadow-yellow-500/50"
+>
+  Start Exploring
+</button>
+
                 </div>
               </div>
             </div>

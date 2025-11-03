@@ -63,7 +63,7 @@ const FeatureDestination = () => {
           <h2 className="text-3xl md:text-5xl font-bold text-center text-gray-800 font-serif mb-3">
             Featured Destinations
           </h2>
-          <div className="w-32 h-1 bg-red-500 mx-auto mb-12 rounded-full"></div>
+          <div className="w-32 h-1 bg-yellow-500 mx-auto mb-12 rounded-full"></div>
 
           <Slider {...settings}>
             {destinations.map((destination) => (
@@ -76,7 +76,7 @@ const FeatureDestination = () => {
                       className="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-700"
                     />
                     <div className="absolute inset-0 bg-black bg-opacity-20 group-hover:bg-opacity-40 transition-all"></div>
-                    <div className="absolute bottom-3 left-3 text-white bg-red-500 px-3 py-1 rounded-md text-sm font-medium shadow">
+                    <div className="absolute bottom-3 left-3 text-white bg-yellow-500 px-3 py-1 rounded-md text-sm font-medium shadow">
                       {destination.time}
                     </div>
                   </div>
@@ -90,7 +90,7 @@ const FeatureDestination = () => {
                       Discover the beauty, history, and charm of {destination.name}.
                     </p>
                     <div className="flex justify-between items-center">
-                      <button className="px-4 py-2 bg-red-500 text-white rounded-lg text-sm font-semibold hover:bg-red-600 transition-all shadow">
+                     <button className="px-4 py-2 bg-[#ffeb3b] text-black rounded-lg text-sm font-semibold hover:bg-yellow-400 transition-all shadow">
                         ${destination.price}
                       </button>
                       <button
@@ -139,11 +139,12 @@ const FeatureDestination = () => {
             </ul>
             <div className="flex justify-end mt-5">
               <button
-                onClick={() => setSelectedDestination(null)}
-                className="px-5 py-2 bg-red-500 text-white rounded-lg font-medium hover:bg-red-600 transition-all"
-              >
-                Close
-              </button>
+  onClick={() => setSelectedDestination(null)}
+  className="px-5 py-2 bg-[#ffeb3b] text-black rounded-lg font-medium hover:bg-yellow-400 transition-all"
+>
+  Close
+</button>
+
             </div>
           </div>
         </div>
